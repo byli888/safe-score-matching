@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv*/
+outputs/
+runs/
+logs/
+checkpoints/
+wandb/
+*.pkl
+*.npz
+*.npy
+*.log
+*.pt
+*.pth
+.DS_Store
+
+# Fixed evaluation populations are source data, not trained model artifacts.
+!evaluation/data/quad2d_initial_states.npz
+!evaluation/data/quad3d_initial_states.npz

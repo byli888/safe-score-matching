@@ -1,0 +1,17 @@
+backend: velocity
+module: evaluate_velocity
+task: swimmer
+protocol:
+  env_id: SafetySwimmerVelocity-v1
+  layout_mode: random
+  num_episodes: 50
+  min_episodes: 50
+  num_workers: 5
+  vector_backend: async
+  max_episode_steps: 1000
+  evaluation_seed: 41000
+  fixed_layout_seed: 42000
+  actor_seed: 43000
+  bootstrap_seed: 44000
+  bootstrap_samples: 10000
+  confidence: 0.95

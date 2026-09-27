@@ -1,0 +1,46 @@
+backend: custom
+module: ssm.tasks.quad3d.train
+arguments:
+  project_name: ssm
+  entity: ''
+  run_name: quad3d
+  seed: 1
+  wandb: false
+  tqdm_bar: true
+  qh_stage_mode: stage_b
+  qh_candidate_source: policy_plus_gaussian
+  qh_min_k_samples: 8
+  qh_min_k_sigma: 0.3
+  reward_norm: l1
+  target_pz: 0.0
+  q_pos: 15
+  q_vel: 6
+  q_ang: 0.5
+  q_psi: 2.0
+  action_penalty: 0.0
+  batch_size: 512
+  actor_hidden: 512,512,512
+  critic_hidden: 512,512
+  M_q: 10
+  beta_safety: 5
+  obs_feature_mode: h_components_closing
+  obs_h_scale: 1.0
+  obs_hdot_scale: 1.0
+  obs_reach_scale: 1.0
+  obs_goal_pos_radius: 0.3
+  obs_goal_vel_radius: 0.3
+  obs_goal_angle_radius: 0.2
+  fuse_clip_min: -10000
+  huber_delta: 10
+  max_steps: 1000000
+  start_training: 5000
+  log_interval: 1000
+  init_curriculum: true
+  init_curriculum_mode: outer_xy
+  init_curriculum_frac: 0.5
+  init_curriculum_pos_xy_min: 1.5
+  init_curriculum_schedule: linear_anneal
+  init_curriculum_anneal_start: 200000
+  init_curriculum_anneal_end: 500000
+  init_curriculum_anneal_end_frac: 0.05
+  checkpoint_interval: 20000

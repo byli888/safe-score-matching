@@ -1,0 +1,16 @@
+-r requirements-common.txt
+numpy==2.0.2
+scipy==1.13.1
+gymnasium==0.28.1
+mujoco==2.3.3
+pygame==2.1.0
+PettingZoo==1.24.3
+Jinja2==3.1.6
+imageio==2.37.3
+xmltodict==1.0.4
+cloudpickle==3.1.2
+gym-notices==0.1.0
+jax-jumpy==1.0.0
+farama-notifications==0.0.4
+glfw==2.10.2
+PyOpenGL==3.1.10

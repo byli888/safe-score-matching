@@ -1,0 +1,23 @@
+backend: custom
+module: evaluate_f16
+task: f16
+protocol:
+  name: f16_stage_a_strict_conditional_v1
+  scope: Stage-A conditional theta/height-grid evaluation
+  stage_mode: stage_a
+  strict_invalid_dynamics: true
+  safety_geometry: checkpoint_effective
+  grid:
+    n_theta: 256
+    n_height: 256
+    theta_min: -0.7
+    theta_max: 0.7
+    height_min: -50.0
+    height_max: 1100.0
+  gate_seed: 20260413
+  gate_chunk_size: 1024
+  init_seed: 19999
+  policy_seed: 20260914
+  episodes: 1000
+  horizon: 512
+  last_n: 50

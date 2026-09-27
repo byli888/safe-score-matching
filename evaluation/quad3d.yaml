@@ -1,0 +1,14 @@
+backend: custom
+module: evaluate_quad
+task: quad3d
+protocol:
+  name: quad3d_fixed_initial_states_v1
+  episodes: 500
+  horizon: 500
+  policy_seed: 20260504
+  initial_states: data/quad3d_initial_states.npz
+  initial_states_sha256: 2b805159faaa4e5ed72268e663db510919ae7e03095848d33a89bf3619e03a42
+  primary_metric: terminal full-state L1 error; L2 reported separately
+  classification:
+    score_seed: 20260926
+    threshold: 0.0

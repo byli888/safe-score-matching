@@ -1,0 +1,14 @@
+backend: custom
+module: evaluate_quad
+task: quad2d
+protocol:
+  name: quad2d_fixed_initial_states_v1
+  episodes: 100
+  horizon: 360
+  policy_seed: 20260504
+  initial_states: data/quad2d_initial_states.npz
+  initial_states_sha256: 26896850f21bb9ab610f26d24363315744c8efda009467e87e570f2fe3415348
+  primary_metric: mean sum of squared state tracking error over scored transitions
+  classification:
+    score_seed: 20260926
+    threshold: 0.0

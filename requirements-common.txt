@@ -1,0 +1,9 @@
+jax==0.6.2
+jaxlib==0.6.2
+flax==0.10.7
+optax==0.2.8
+orbax-checkpoint==0.11.33
+gym==0.23.1
+PyYAML==6.0.3
+absl-py==2.4.0
+tqdm==4.67.3

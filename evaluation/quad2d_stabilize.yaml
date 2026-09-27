@@ -1,0 +1,26 @@
+backend: custom
+module: evaluate_quad2d_stabilize
+task: quad2d_stabilize
+protocol:
+  episodes: 200
+  horizon: 400
+  panels:
+    exact:
+      base_policy_seed: 20260505
+      init_seed: 20260504
+      per_episode_fold_in_base: 20260505
+    vel_small:
+      base_policy_seed: 20263532
+      init_seed: 20260807
+      per_episode_fold_in_base: 20263532
+      vx:
+      - -0.1
+      - 0.1
+      vz:
+      - -0.05
+      - 0.05
+    lower_region:
+      init_seed: 20260501
+      base_policy_seed: 20260502
+      per_episode_fold_in_base: 20260502
+      z_high: 0.55

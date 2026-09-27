@@ -1,0 +1,5 @@
+-r requirements-common.txt
+numpy==2.2.6
+scipy==1.15.3
+jax-f16==0.0.2
+jaxtyping==0.3.7

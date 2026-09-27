@@ -1,0 +1,33 @@
+backend: custom
+module: ssm.tasks.quad2d_tracking.train
+arguments:
+  project_name: ssm
+  entity: ''
+  run_name: quad2d
+  seed: 0
+  wandb: false
+  tqdm_bar: true
+  max_steps: 2010000
+  start_training: 5000
+  batch_size: 512
+  actor_hidden: 512,512
+  critic_hidden: 512,512
+  M_q: 10
+  alpha_r: 1.0
+  beta_safety: 5.0
+  delta: 0.0
+  discount: 0.99
+  discount_h: 0.999
+  tau: 0.005
+  cost_critic_hyperparam: 0.9
+  ref_velocity: true
+  q_vel: 1.0
+  action_penalty: 0.001
+  beta_schedule: vp
+  T: 5
+  actor_delay: 1
+  ddpm_temperature: 0.2
+  fuse_clip_min: -5000
+  fuse_clip_max: 100
+  huber_delta: 10.0
+  checkpoint_interval: 50000
