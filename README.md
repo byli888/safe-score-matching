@@ -191,10 +191,12 @@ Built on [Q-Score Matching](https://github.com/escontra/score_matching_rl),
 [FISOR](https://github.com/ZhengYinan-AIR/FISOR).
 
 The F-16 model and textures shown in the demo videos and previews are from
-[F-16C BLOCK 52](https://sketchfab.com/3d-models/f-16c-block-52-633481ba6654464c98f492c1138b5ba3)
-by [MartusMartus7878](https://sketchfab.com/MartusMartus7878), licensed under
+**F-16C BLOCK 52** by **MartusMartus7878**, licensed under
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The model was scaled,
-oriented, and animated for these simulation renderings.
+oriented, and animated for these simulation renderings. The
+[original Sketchfab listing](https://sketchfab.com/3d-models/f-16c-block-52-633481ba6654464c98f492c1138b5ba3)
+is currently unavailable; attribution and license information are preserved in
+the downloaded model's embedded metadata.
 
 The code is released under the [MIT License](LICENSE); the F-16 asset retains its
 CC BY 4.0 license. See [third-party notices](THIRD_PARTY_NOTICES.md) for source
